@@ -1,0 +1,6 @@
+# Your .env file contains secrets. It should NEVER be committed to version control (like Git).
+# Add it to your .gitignore file immediately.
+# .gitignore is Essential:
+
+
+OPENAI_API_KEY=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

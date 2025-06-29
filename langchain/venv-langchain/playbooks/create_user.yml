@@ -1,0 +1,9 @@
+# playbooks/create_user.yml
+- name: Create Linux User
+  hosts: all
+  become: yes
+  tasks:
+    - name: Ensure user exists
+      ansible.builtin.user:
+        name: "{{ username }}"
+        shell: /bin/bash

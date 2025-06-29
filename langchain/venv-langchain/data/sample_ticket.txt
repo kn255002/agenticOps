@@ -1,0 +1,1 @@
+kindly create a linux user named kn5155638 on few machines Tst-vm1,Tst-vm2 using Ansible or other standard tools.
