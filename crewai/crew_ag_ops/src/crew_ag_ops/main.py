@@ -9,8 +9,8 @@ from crew_ag_ops.crew import CrewAgOps
 # without hardcoding them into the source code.
 # Make sure to create a .env file in the root directory with the necessary variables.
 #
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 #
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
@@ -25,7 +25,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
+        'topic': 'AI LLMs Framework prepared by CrewAI',
         'current_year': str(datetime.now().year)
     }
     
