@@ -32,7 +32,7 @@ def run():
     try:
         CrewAgOps().crew().kickoff(inputs=inputs)
     except Exception as e:
-        raise Exception(f"An error occurred while running the crew: {e}")
+        raise Exception("An error occurred while running the crew: {e}")
 
 
 def train():
@@ -47,7 +47,7 @@ def train():
         CrewAgOps().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
 
     except Exception as e:
-        raise Exception(f"An error occurred while training the crew: {e}")
+        raise Exceptionf"An error occurred while training the crew: {e}")
 
 def replay():
     """
@@ -57,7 +57,7 @@ def replay():
         CrewAgOps().crew().replay(task_id=sys.argv[1])
 
     except Exception as e:
-        raise Exception(f"An error occurred while replaying the crew: {e}")
+        raise Exception("An error occurred while replaying the crew: {e}")
 
 def test():
     """
@@ -72,4 +72,4 @@ def test():
         CrewAgOps().crew().test(n_iterations=int(sys.argv[1]), eval_llm=sys.argv[2], inputs=inputs)
 
     except Exception as e:
-        raise Exception(f"An error occurred while testing the crew: {e}")
+        raise Exception("An error occurred while testing the crew: {e}")
