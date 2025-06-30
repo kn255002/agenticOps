@@ -1,0 +1,9 @@
+# This is the .gitignore file for the crewai-parser project
+# It specifies files and directories that should be ignored by Git Ver-Ctl-sys. 
+# .gitignore
+
+venv-crewai/
+__pycache__/
+*.pyc
+.env
+data/outputs/*
