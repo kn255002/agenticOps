@@ -47,7 +47,7 @@ def train():
         CrewAgOps().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
 
     except Exception as e:
-        raise Exceptionf"An error occurred while training the crew: {e}")
+        raise Exception("An error occurred while training the crew: {e}")
 
 def replay():
     """
